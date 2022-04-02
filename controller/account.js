@@ -1,6 +1,7 @@
 const formidable = require('formidable');
 const { changeEmail, changePassword } = require('../model/account');
 const { retrieveUserByEmail, retrieveUserById } = require('../model/auth');
+const bcrypt = require("bcrypt");
 
 
 exports.changeEmail = (req, res, next) => {
@@ -34,7 +35,8 @@ exports.changePassword = (req, res, next) => {
     const { oldPassword, newPassword, id } = fields;
     let user = "";
     user = await retrieveUserById(id);
-    if (user.password != oldPassword) {
+    const matchedPassword = await bcrypt.compare(oldPassword, user.password);
+    if (!matchedPassword) {
       return res.status(400).json({
         error: "Old password does not match!"
       })
