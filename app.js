@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 const cors = require("cors");
 app.use(cors({
   credentials: true,
-  origin: ["https://fullstack-ecommerce-app.herokuapp.com/, http://fullstack-ecommerce-app.herokuapp.com/"]
+  origin: "http://localhost:3000"
 }));
 
 // Initialise Morgan - Request Logger

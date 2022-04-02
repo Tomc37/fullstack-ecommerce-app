@@ -1,0 +1,114 @@
+[
+  {
+      "id": 1,
+      "name": "Intel Core i7-11700K 3.6GHz",
+      "description": "CM8070804488629, 8/16 Cores / Threads, 3.60GHz Clock Speed, 5.0GHz Single Core Max Turbo, 16mb Cache, 125W TDP, Dual Channel DDR4 Controller, Onboard Graphics: Yes, 1 Year Warranty",
+      "category": "CPU",
+      "image": "CPU1",
+      "price": "£344.99"
+  },
+  {
+      "id": 2,
+      "name": "AMD Ryzen 5 5600X Six Core 4.6GHz",
+      "description": "100-100000065BOX, 6 Core with 12 Threads, 4.60GHz clock speed, 7nm FinFet Process, 32MB L3 Cache, Dual Channel DDR4 Controller, 3200-3600MHz RAM Recommended, 3 Year Warranty",
+      "category": "CPU",
+      "image": "CPU2",
+      "price": "£199.99"
+  },
+  {
+      "id": 4,
+      "name": "Sapphire Radeon RX 6500 XT Pulse Gaming 4GB GDDR6",
+      "description": "11314-01-20G, Game Clock: 2685MHz, Boost Clock: 2825MHz, Memory: 4096MB 18000MHz GDDR6, Stream Processors: 1024, DirectX 12 Support, Vulkan Support, RDNA, Freesync 2 HDR support, 3yr",
+      "category": "GPU",
+      "image": "GPU2",
+      "price": "£179.99"
+  },
+  {
+      "id": 5,
+      "name": "Patriot Viper Steel 32GB (2x16GB) DDR4 3600MHz",
+      "description": "PVS432G360C8K, 3600MHz RAM Speed, CAS 18-22-22-42 Timings, 1.35v VDIMM, Lifetime Warranty with OcUK.",
+      "category": "Memory",
+      "image": "Memory1",
+      "price": "£99.95"
+  },
+  {
+      "id": 6,
+      "name": "Crucial Ballistix RGB 16GB (2x8GB) DDR4 3600MHz",
+      "description": "BL2K8G36C16U4BL, 3600MHz RAM Speed, CAS 16-18-18-36 Timings, 1.35-1.45v VDIMM, Lifetime Warranty with OcUK.",
+      "category": "Memory",
+      "image": "Memory2",
+      "price": "£74.99"
+  },
+  {
+      "id": 7,
+      "name": "Seagate 2TB Barracuda HDD Internal Hard Drive",
+      "description": "2TB Hard Drive, ST2000DM008, Part of the Compute Guardian Range, 3.5 inch, SATA 6Gb/s Interface, SMR Technology, 7200RPM Spin Speed, 256MB Cache, 2 Year Warranty,",
+      "category": "HD",
+      "image": "HD1",
+      "price": "£45.95"
+  },
+  {
+      "id": 8,
+      "name": "WD Black 1TB SSD M.2 NVME PCI-E Gen4 SSD",
+      "description": "1TB M.2 SSD, WDS100T1X0E, WD Black, M.2 (2280) NVMe SSD, PCIe Gen4 x4, Read 7000MB/s, Write 5300MB/s, 600 TBW, 5 Year Warranty",
+      "category": "HD",
+      "image": "HD2",
+      "price": "£139.99"
+  },
+  {
+      "id": 9,
+      "name": "Asus ROG Strix Z490-I Gaming (Socket LGA 1200) DDR4 Mini-ITX Motherboard",
+      "description": "Socket 1200, Support for Intel 10th Generation Comet Lake-S Processors, 2x DDR4 DIMM, 4x SATA, 2x M.2, RGB (Analogue & Digital), Intel 2.5Gb LAN, WI-FI 6, Bluetooth v 5.1",
+      "category": "MB",
+      "image": "MB1",
+      "price": "£229.99"
+  },
+  {
+      "id": 10,
+      "name": "MSI B450 TOMAHAWK MAX II (Socket AM4) DDR4 ATX Motherboard",
+      "description": "MSI B450 TOMAHAWK MAX II (Socket AM4) DDR4 ATX Motherboard",
+      "category": "MB",
+      "image": "MB2",
+      "price": "£59.99"
+  },
+  {
+      "id": 11,
+      "name": "Kolink Modular Power 700W 80 Plus Bronze Modular Power Supply",
+      "description": "Modern Design, Semi-modular cable management, 648W and 54A on a 12V rail, 80 PLUS bronze certificate for high efficiency",
+      "category": "PSU",
+      "image": "PSU1",
+      "price": "£54.95"
+  },
+  {
+      "id": 12,
+      "name": "Corsair RM Series RM750 750W 80 Plus Gold Modular Power Supply (CP-9020195-UK)",
+      "description": "80 PLUS Gold Certification, Low Noise Operation, 105°C-Rated Capacitors, Zero RPM Fan Mode, Fully Modular, SLI Ready, Compact Size, Ten-Year Manufacturers Warranty",
+      "category": "PSU",
+      "image": "PSU2",
+      "price": "£99.95"
+  },
+  {
+      "id": 13,
+      "name": "Lian Li O11 Dynamic XL (ROG Certified) Aluminium Full-Tower - White",
+      "description": "Huge Dual-Chamber Full-Tower, Side- and front in tempered glass, Graphics cards up to 446 mm, 3x 360 mm radiators compatible, Roof and side in aluminium, Up to 9x 120 mm fans, 1x USB Type C + 4x USB3",
+      "category": "Case",
+      "image": "Case1",
+      "price": "£209.99"
+  },
+  {
+      "id": 14,
+      "name": "Kolink Observatory Lite ARGB Midi Tower Gaming Case - Black",
+      "description": "Outstanding Midi-Tower from Kolink, 4 x pre-installed 120mm aRGB fans, Tempered glass side panel, PSU shroud, RGB Remote with Effects & Speed Control, EPE Foam Packaging",
+      "category": "Case",
+      "image": "Case2",
+      "price": "£59.99"
+  },
+  {
+      "id": 3,
+      "name": "Palit GeForce RTX 3090 Gaming Pro 24GB GDDR6X",
+      "description": "NED3090019SB-132BA, Boost Clock: 1695MHz, Memory 24GB 19500MHz GDDR6X, Cuda Cores: 10496, VR Ready, PhysX/CUDA Enabled, NVIDIA Ampere, 8nm Process, Real-Time Ray Tracing, 2 Years Warranty.",
+      "category": "GPU",
+      "image": "GPU1",
+      "price": "£1,949.99"
+  }
+]
