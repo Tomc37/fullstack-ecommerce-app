@@ -53,7 +53,7 @@ function Orders() {
       {!orders[0] && (
         <div id="no-orders">
           <p>You have not placed any orders.</p>
-          <a id="products-link" href="http://localhost:3000/products">
+          <a id="products-link" href="../products">
             Back to products
           </a>
         </div>
