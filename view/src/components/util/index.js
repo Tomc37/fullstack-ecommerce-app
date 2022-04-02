@@ -1,8 +1,6 @@
-const API_ENDPOINT = "http://localhost:3001";
-
 export const createAccount = async (user) => {
   try {
-    const res = await fetch(`${API_ENDPOINT}/auth/register`, {
+    const res = await fetch(`/auth/register`, {
       method: "POST",
       body: user,
     });
@@ -15,7 +13,7 @@ export const createAccount = async (user) => {
 
 export const loginAccount = async (email, password) => {
   try {
-    const res = await fetch(`${API_ENDPOINT}/auth/login`, {
+    const res = await fetch(`/auth/login`, {
       method: "POST",
       body: new URLSearchParams({
         email: email,
@@ -32,7 +30,7 @@ export const loginAccount = async (email, password) => {
 
 export const logOut = async () => {
   try {
-    const res = await fetch(`${API_ENDPOINT}/auth/logout`, {
+    const res = await fetch(`/auth/logout`, {
       method: "GET",
       credentials: "include",
     });
@@ -45,7 +43,7 @@ export const logOut = async () => {
 
 export const changeEmail = async (data) => {
   try {
-    const res = await fetch(`${API_ENDPOINT}/account/email`, {
+    const res = await fetch(`/account/email`, {
       credentials: "include",
       method: "PUT",
       body: data,
@@ -59,7 +57,7 @@ export const changeEmail = async (data) => {
 
 export const changePassword = async (data) => {
   try {
-    const res = await fetch(`${API_ENDPOINT}/account/password`, {
+    const res = await fetch(`/account/password`, {
       method: "PUT",
       body: data,
       credentials: "include",
@@ -73,7 +71,7 @@ export const changePassword = async (data) => {
 
 export const getCart = async () => {
   try {
-    const res = await fetch(`${API_ENDPOINT}/cart`, {
+    const res = await fetch(`/cart`, {
       credentials: "include",
       method: "GET",
     });
@@ -86,7 +84,7 @@ export const getCart = async () => {
 
 export const getProducts = async () => {
   try {
-    const res = await fetch(`${API_ENDPOINT}/products/getproducts`, {
+    const res = await fetch(`/products/getproducts`, {
       method: "GET",
       credentials: "include",
     });
@@ -104,7 +102,7 @@ export const addToCart = async (cartId, productId, price) => {
     //   productId: ${productId}\n
     //   price: ${price}
     // `)
-    const res = await fetch(`${API_ENDPOINT}/products/addtocart`, {
+    const res = await fetch(`/products/addtocart`, {
       method: "POST",
       credentials: "include",
       body: new URLSearchParams({
@@ -123,7 +121,7 @@ export const addToCart = async (cartId, productId, price) => {
 export const retrieveCartProducts = async (cartId) => {
   try {
     // console.log(cartId);
-    const res = await fetch(`${API_ENDPOINT}/cart/checkout`, {
+    const res = await fetch(`/cart/checkout`, {
       method: "POST",
       body: new URLSearchParams({
         cartId: cartId,
@@ -151,7 +149,7 @@ export const updateCartAmount = async (
     cart.id: ${cartId}\n
     price: ${price}
     `);
-    const res = await fetch(`${API_ENDPOINT}/cart/checkout/updateamount`, {
+    const res = await fetch(`/cart/checkout/updateamount`, {
       method: "PUT",
 
       body: new URLSearchParams({
@@ -171,7 +169,7 @@ export const updateCartAmount = async (
 
 export const deleteFromCart = async (cartId, productId, price, cartAmount) => {
   try {
-    const res = await fetch(`${API_ENDPOINT}/cart/checkout/delete`, {
+    const res = await fetch(`/cart/checkout/delete`, {
       method: "DELETE",
       body: new URLSearchParams({
         cartId: cartId,
@@ -194,7 +192,7 @@ export const submitOrder = async (orderPrice, cartProducts, cartId) => {
   cartId: ${cartId}\n
 `);
   try {
-    const res = await fetch(`${API_ENDPOINT}/cart/checkout/submitorder`, {
+    const res = await fetch(`/cart/checkout/submitorder`, {
       method: "POST",
       body: new URLSearchParams({
         orderPrice: orderPrice,
@@ -212,7 +210,7 @@ export const submitOrder = async (orderPrice, cartProducts, cartId) => {
 
 export const retrieveOrders = async () => {
   try {
-    const res = await fetch(`${API_ENDPOINT}/orders/getorders`, {
+    const res = await fetch(`/orders/getorders`, {
       method: "GET",
       credentials: "include"
     })
@@ -225,7 +223,7 @@ export const retrieveOrders = async () => {
 
 export const retrieveOrder = async (id) => {
   try {
-    const res = await fetch(`${API_ENDPOINT}/orders/${id}`, {
+    const res = await fetch(`/orders/${id}`, {
       method: "GET",
       credentials: "include"
     })
