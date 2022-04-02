@@ -14,7 +14,7 @@ function Checkout({ cart, setCart }) {
 
   const handleAmountValueChange = async (e) => {
     const newValue = parseInt(e.currentTarget.value);
-    const productId = parseInt(e.currentTarget.id);
+    const productId = e.currentTarget.id;
     const price = cartProducts.find(
       (object) => object.product_id === productId
     ).price;
@@ -38,8 +38,8 @@ function Checkout({ cart, setCart }) {
   };
 
   const handleDelete = async (e) => {
-    const productId = parseInt(e.currentTarget.id);
-    const cartId = parseInt(cart.id);
+    const productId = e.currentTarget.id;
+    const cartId = cart.id;
     const price = cartProducts.find(
       (object) => object.product_id === productId
     ).price;
@@ -64,7 +64,7 @@ function Checkout({ cart, setCart }) {
   const handleSubmitOrder = async (e) => {
     e.preventDefault();
     const orderPrice = cart.price;
-    const cartId = parseInt(cart.id);
+    const cartId = cart.id;
     // console.log(JSON.stringify(cartProducts));
     console.log(`
       orderPrice: ${orderPrice}\n

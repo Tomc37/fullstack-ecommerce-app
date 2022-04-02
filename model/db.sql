@@ -13,7 +13,7 @@ CREATE TABLE orders (
   price money NOT NULL,
   status varchar(255) NOT NULL,
   PRIMARY KEY (id),
-  FOREIGN KEY (user_id) REFERENCES users(id)
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
 CREATE TABLE products (
@@ -32,7 +32,7 @@ CREATE TABLE carts (
   product_count int NOT NULL DEFAULT 0,
   price money NOT NULL DEFAULT 0,
   PRIMARY KEY (id),
-  FOREIGN KEY (user_id) REFERENCES users(id)
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
 CREATE TABLE orders_products (
@@ -40,8 +40,8 @@ CREATE TABLE orders_products (
   product_id uuid NOT NULL,
   amount int NOT NULL,
   price money NOT NULL,
-  FOREIGN KEY (order_id) REFERENCES orders(id),
-  FOREIGN KEY (product_id) REFERENCES products(id),
+  FOREIGN KEY (order_id) REFERENCES orders(id) ON DELETE CASCADE,
+  FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE,
   PRIMARY KEY (order_id, product_id)
 );
 
@@ -50,7 +50,7 @@ CREATE TABLE carts_products (
   product_id uuid NOT NULL,
   amount int NOT NULL,
   price money NOT NULL,
-  FOREIGN KEY (cart_id) REFERENCES carts(id),
-  FOREIGN KEY (product_id) REFERENCES products(id),
+  FOREIGN KEY (cart_id) REFERENCES carts(id) ON DELETE CASCADE,
+  FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE,
   PRIMARY KEY (cart_id, product_id)
 );

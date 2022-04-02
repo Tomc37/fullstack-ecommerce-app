@@ -12,7 +12,7 @@ function Products({ cart, setCart }) {
 
   const handleProductClick = async (e) => {
     e.preventDefault();
-    const productId = parseInt(e.currentTarget.id);
+    const productId = e.currentTarget.id;
     const price = products.find(object => object.id === productId).price;
     const cartId = cart.id;
     // console.log(`

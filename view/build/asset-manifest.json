@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d577fa13.css",
+    "main.js": "/static/js/main.63d279de.js",
+    "static/media/GPU1.jpg": "/static/media/GPU1.465cc64efbb7bb1aa8dd.jpg",
+    "static/media/Memory1.jpg": "/static/media/Memory1.34622604c03f8805d08c.jpg",
+    "static/media/MB1.jpg": "/static/media/MB1.67ff66af5b2ffa085c47.jpg",
+    "static/media/PSU2.jpg": "/static/media/PSU2.5e9203d4845eb9a14659.jpg",
+    "static/media/GPU2.jpg": "/static/media/GPU2.72a0a3f79878670fbf86.jpg",
+    "static/media/MB2.jpg": "/static/media/MB2.3c13a67d681731d75e5c.jpg",
+    "static/media/PSU1.jpg": "/static/media/PSU1.0de5e149801f494201a1.jpg",
+    "static/media/Case2.jpg": "/static/media/Case2.d3e8a0cecefccf2b87d6.jpg",
+    "static/media/Case1.jpg": "/static/media/Case1.59363f053eb56189174c.jpg",
+    "static/media/CPU2.jpg": "/static/media/CPU2.f62e36f1a6981f9a98b1.jpg",
+    "static/media/Memory2.jpg": "/static/media/Memory2.259c491a4881695cbf1e.jpg",
+    "static/media/CPU1.jpg": "/static/media/CPU1.5df7ff85e03c16450c5f.jpg",
+    "static/media/HD1.jpg": "/static/media/HD1.2aa0ed52453638bc0aa0.jpg",
+    "static/media/HD2.jpg": "/static/media/HD2.d56397ffdef46055f8e8.jpg",
+    "index.html": "/index.html",
+    "main.d577fa13.css.map": "/static/css/main.d577fa13.css.map",
+    "main.63d279de.js.map": "/static/js/main.63d279de.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d577fa13.css",
+    "static/js/main.63d279de.js"
+  ]
+}
