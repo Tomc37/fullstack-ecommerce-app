@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16pt;
+  box-sizing: border-box;
+}
+
+body {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+}

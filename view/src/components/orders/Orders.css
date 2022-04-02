@@ -1,0 +1,48 @@
+#orders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 60%;
+  margin: 1rem 0;
+}
+
+.order-listing {
+  display: flex;
+  width: auto;
+  margin: .5rem 0;
+  border: solid 2px rgb(0, 78, 17);
+  padding: .4rem;
+}
+
+.order-listing:hover {
+  cursor: pointer;
+}
+
+.order-listing span {
+  font-size: .9rem;
+  color: black;
+  margin-right: 0.5rem;
+}
+
+#order-id {
+  width: 6rem;
+  text-align: left;
+}
+
+#order-date {
+  width: 10rem;
+}
+
+#order-status {
+  width: 10rem
+}
+
+#order-price {
+  width: 8rem;
+}
+
+#table-title {
+  width: 100%;
+}
+

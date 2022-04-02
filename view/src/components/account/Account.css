@@ -1,0 +1,91 @@
+#account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  margin: 1rem;
+  border: solid 1px rgb(197, 194, 194);
+}
+
+#account h3 {
+  margin: 1rem;
+  text-align: center;
+}
+
+.account-details {
+  margin: 1rem;
+}
+
+#account span {
+  font-size: .8rem;
+}
+
+#account .detail-span {
+  text-decoration: underline;
+}
+
+#account .link-span {
+  margin-left: .5rem;
+}
+
+#account .link-span span {
+  font-size: 0.6rem;
+}
+
+#account #password-details {
+  margin-bottom: 1rem;
+}
+
+#account form {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: auto;
+}
+
+#account label {
+  width: 220px;
+  font-size: 0.8rem;
+}
+
+#account input {
+  float: right;
+  font-size: 0.8rem;
+}
+
+#account #button {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#account #error-success {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#account p {
+  font-size: 0.8rem;
+  margin: 0.5rem;
+}
+
+#order-history {
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
+
+#no-orders {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  color: rgb(2, 61, 2);
+}
+
+#products-link {
+  font-size: .8rem;;
+  margin-top: 1rem;
+}

@@ -1,0 +1,33 @@
+#header {
+  display: inline-flex;
+  align-items: center;
+  height: 75px;
+  width: 100%;
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+
+#header h1 {
+  width: 90%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#header p {
+  text-decoration: none;
+  color: white;
+  font-size: .75rem;
+  margin: 0 auto;
+}
+
+#header a {
+  text-decoration: none;
+  color: white;
+  font-size: .75rem;
+  margin: 0 auto;
+}
+
+#header p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

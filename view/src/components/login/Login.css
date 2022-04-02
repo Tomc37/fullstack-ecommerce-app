@@ -1,0 +1,56 @@
+#login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  margin-top: 1rem;
+  border: solid 1px rgb(197, 194, 194);
+}
+
+#login h3 {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#login form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: auto;
+}
+
+#login label {
+  width: 220px;
+  font-size: 0.8rem;
+}
+
+#login input {
+  float: right;
+  font-size: 0.8rem;
+}
+
+#login #email {
+  margin-bottom: 0.5rem;
+}
+
+#login #button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#login button {
+  width: 120px;
+  margin: 1rem 0;
+}
+
+#login a {
+  font-size: .6rem;
+  margin: 1rem 0;
+}
+
+#login p {
+  font-size: .7rem;
+  margin-top: 1rem;
+}
