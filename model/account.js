@@ -1,4 +1,4 @@
-const db = require('./db/db');
+const db = require('./db');
 
 const changeEmail = async (email, id) => {
   try {

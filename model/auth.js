@@ -1,4 +1,4 @@
-const db = require('./db/db');
+const db = require('./db');
 const {v4: uuidv4} = require("uuid");
 
 const retrieveUserByEmail = async (email) => {
