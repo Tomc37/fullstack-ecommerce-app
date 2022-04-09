@@ -44,16 +44,16 @@ const updateCartAmount = async (
     price = parseFloat(price.replace(",", "").substring(1));
     oldValue = parseInt(oldValue);
     newValue = parseInt(newValue);
-    console.log(`
-      newValue: ${newValue}\n
-      typeof newValue: ${typeof newValue}\n
-      oldValue: ${oldValue}\n
-      typeof oldValue: ${typeof oldValue}\n
-      cartId: ${cartId}\n
-      productId: ${productId}\n
-      price: ${price}\n
-      typeof price: ${typeof price}
-    `);
+    // console.log(`
+    //   newValue: ${newValue}\n
+    //   typeof newValue: ${typeof newValue}\n
+    //   oldValue: ${oldValue}\n
+    //   typeof oldValue: ${typeof oldValue}\n
+    //   cartId: ${cartId}\n
+    //   productId: ${productId}\n
+    //   price: ${price}\n
+    //   typeof price: ${typeof price}
+    // `);
     let updatedProductAmount = await db.query(
       "UPDATE carts_products SET amount = $1 WHERE cart_id = $2 AND product_id = $3 RETURNING *;",
       [newValue, cartId, productId]
@@ -93,18 +93,18 @@ const deleteFromCart = async (cartId, productId, price, cartAmount) => {
 
 const submitOrder = async (userId, orderPrice, cartProducts, cartId) => {
   cartProducts = await JSON.parse(cartProducts);
-  console.log(`typeof cartProducts: ${typeof cartProducts}`);
-  console.log(`
-    userId: ${userId}\n
-    orderPrice: ${parseFloat(orderPrice.replace(",", "").substring(1))}\n
-    cartProducts: ${cartProducts}\n
-    cartId: ${cartId}
-  `);
-  cartProducts.forEach((object) => {
-    console.log(object.name);
-    console.log(object.price);
-    console.log(object.amount);
-  })
+  // console.log(`typeof cartProducts: ${typeof cartProducts}`);
+  // console.log(`
+  //   userId: ${userId}\n
+  //   orderPrice: ${parseFloat(orderPrice.replace(",", "").substring(1))}\n
+  //   cartProducts: ${cartProducts}\n
+  //   cartId: ${cartId}
+  // `);
+  // cartProducts.forEach((object) => {
+  //   console.log(object.name);
+  //   console.log(object.price);
+  //   console.log(object.amount);
+  // })
   try {
     orderPrice = parseFloat(orderPrice.replace(",", "").substring(1));
 

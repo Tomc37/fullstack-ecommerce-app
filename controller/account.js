@@ -42,7 +42,9 @@ exports.changePassword = (req, res, next) => {
       })
     }
     try {
-      const newUser = await changePassword(newPassword, id);
+      const salt = await bcrypt.genSalt(10);
+      const hashedPassword = await bcrypt.hash(password, salt) 
+      const newUser = await changePassword(hashedPassword, id);
       return res.status(201).json({ data: newUser });
     } catch (err) {
       return res.status(400).json({

@@ -66,12 +66,12 @@ function Checkout({ cart, setCart }) {
     const orderPrice = cart.price;
     const cartId = cart.id;
     // console.log(JSON.stringify(cartProducts));
-    console.log(`
-      orderPrice: ${orderPrice}\n
-      cartProducts: ${cartProducts}\n
-      typeof cartProducts: ${typeof cartProducts}\n;
-      cartId: ${cartId}\n
-    `);
+    // console.log(`
+    //   orderPrice: ${orderPrice}\n
+    //   cartProducts: ${cartProducts}\n
+    //   typeof cartProducts: ${typeof cartProducts}\n;
+    //   cartId: ${cartId}\n
+    // `);
     try {
       await submitOrder(orderPrice, JSON.stringify(cartProducts), cartId);
       setCart(await getCart());

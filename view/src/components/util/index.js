@@ -186,11 +186,11 @@ export const deleteFromCart = async (cartId, productId, price, cartAmount) => {
 };
 
 export const submitOrder = async (orderPrice, cartProducts, cartId) => {
-  console.log(`
-  orderPrice: ${orderPrice}\n
-  cartProducts: ${cartProducts}\n
-  cartId: ${cartId}\n
-`);
+//   console.log(`
+//   orderPrice: ${orderPrice}\n
+//   cartProducts: ${cartProducts}\n
+//   cartId: ${cartId}\n
+// `);
   try {
     const res = await fetch(`/cart/checkout/submitorder`, {
       method: "POST",
