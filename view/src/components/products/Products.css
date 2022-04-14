@@ -96,6 +96,13 @@
   color: rgb(2, 51, 3)
 }
 
+.product-listing .button:active {
+  cursor: pointer;
+  background-color: yellow;
+  border: 2px solid rgb(1, 107, 5);
+  color: rgb(2, 51, 3)
+}
+
 .button p {
   height: auto;
   font-size: .7rem;
