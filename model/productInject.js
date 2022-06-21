@@ -3,7 +3,7 @@ const { Pool } = require("pg");
 const {v4: uuidv4} = require("uuid");
 
 const db = new Pool({
-  connectionString: "postgres://mtqqlijanwqjur:6c8fc56e6b87590e8fec5236286e0e63d5ceb17ee6f209761c7699aa40a02a70@ec2-99-80-170-190.eu-west-1.compute.amazonaws.com:5432/df1jdgnuh0td16",
+  connectionString: "postgres://uliduhnynzxeok:34a4cef4e4b7168b6a3640b4239f0ff8ae2fbe474126cae530001064bef7ceaa@ec2-54-75-184-144.eu-west-1.compute.amazonaws.com:5432/d63mjd2vdh157i",
   ssl: {
     rejectUnauthorized: false,
     required: true
