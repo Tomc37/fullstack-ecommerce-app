@@ -98,11 +98,7 @@
 
 .product-listing .button:active {
   cursor: pointer;
-<<<<<<< HEAD
-  background-color:rgb(24, 204, 8);
-=======
-  background-color: yellow;
->>>>>>> 39b665df7bc573d4e3fe2ae9989ed14015b0ddd3
+  background-color:rgb(214, 211, 18);
   border: 2px solid rgb(1, 107, 5);
   color: rgb(2, 51, 3)
 }
